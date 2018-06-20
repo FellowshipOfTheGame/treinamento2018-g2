@@ -43,11 +43,15 @@ public class Interagir : MonoBehaviour
 
                 resp_int = hit.collider.GetComponent(typeof(Resp_Interacao)) as Resp_Interacao;
 
-                resp_int.enabled = true;
-
                 resp_int.set_player(gameObject);
+
+                resp_int.Acao();
+
+                
 
             }
         }
+        if (hit.collider != null)
+            Debug.Log("hit.collider.name = " + hit.collider.name);
     }
 }

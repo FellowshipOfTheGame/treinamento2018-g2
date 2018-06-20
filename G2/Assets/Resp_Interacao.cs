@@ -9,6 +9,10 @@ public class Resp_Interacao : MonoBehaviour
     public void set_player(GameObject plr) { player = plr; }
     public GameObject get_player() { return player; }
 
+    public virtual void Acao()
+    {
+
+    }
 
     // Use this for initialization
     void Start()
