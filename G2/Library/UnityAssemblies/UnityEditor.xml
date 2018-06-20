@@ -14867,15 +14867,15 @@ More information - https:msdn.microsoft.comen-uslibrary/dn584397(v=vs.110).aspx.
     </member>
     <member name="M:UnityEditor.EditorWindow.Show">
       <summary>
-        <para>Show the EditorWindow.</para>
+        <para>Show the EditorWindow window.</para>
       </summary>
-      <param name="immediateDisplay"></param>
+      <param name="immediateDisplay">Immediately display Show.</param>
     </member>
     <member name="M:UnityEditor.EditorWindow.Show(System.Boolean)">
       <summary>
-        <para>Show the EditorWindow.</para>
+        <para>Show the EditorWindow window.</para>
       </summary>
-      <param name="immediateDisplay"></param>
+      <param name="immediateDisplay">Immediately display Show.</param>
     </member>
     <member name="M:UnityEditor.EditorWindow.ShowAsDropDown(UnityEngine.Rect,UnityEngine.Vector2)">
       <summary>

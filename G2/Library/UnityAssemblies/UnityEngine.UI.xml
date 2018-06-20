@@ -2593,7 +2593,7 @@ If you have modified the list of options, you should call this method afterwards
     </member>
     <member name="P:UnityEngine.UI.FontData.defaultFontData">
       <summary>
-        <para>Get a font data with sensible defaults.</para>
+        <para>Maintain a list of all the FontData features.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.UI.FontData.font">
@@ -2751,6 +2751,11 @@ If you have modified the list of options, you should call this method afterwards
     <member name="M:UnityEngine.UI.Graphic.LayoutComplete">
       <summary>
         <para>See ICanvasElement.LayoutComplete.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEngine.UI.Graphic.OnCullingChanged">
+      <summary>
+        <para>Callback function to call when the culling has changed.</para>
       </summary>
     </member>
     <member name="M:UnityEngine.UI.Graphic.OnDisable">
@@ -5308,7 +5313,7 @@ Characters 0-9, . (dot), and - (dash / minus sign) are allowed. The dash is only
     </member>
     <member name="P:UnityEngine.UI.Selectable.interactable">
       <summary>
-        <para>UI.Selectable.interactable.</para>
+        <para>Use to enable or disable the ability to select a selectable UI element (for example, a Button).</para>
       </summary>
     </member>
     <member name="P:UnityEngine.UI.Selectable.navigation">
