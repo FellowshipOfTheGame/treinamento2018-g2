@@ -11,7 +11,9 @@ public class cloner : MonoBehaviour {
     {
         pc = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
     }
-    public void OnTriggerEnter(Collider other)
+
+    
+    public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player") && !pc.isCloned)
         {

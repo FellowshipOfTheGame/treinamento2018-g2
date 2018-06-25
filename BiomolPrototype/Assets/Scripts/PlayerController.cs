@@ -12,6 +12,6 @@ public class PlayerController : MonoBehaviour {
         float moveVertical = Input.GetAxis("Vertical");
 
         Vector2 movimento = new Vector2(moveHorizontal, moveVertical);
-        GetComponent<Rigidbody>().velocity = movimento * velocidade;
+        GetComponent<Rigidbody2D>().velocity = movimento * velocidade;
     }
 }
