@@ -81,15 +81,12 @@
     <Compile Include="Assets\Scripts_Player\Interagir.cs" />
     <Compile Include="Assets\Scripts_Player\Movimento_Player.cs" />
 <<<<<<< HEAD
-<<<<<<< HEAD
     <Compile Include="Assets\Scripts_Player\Resp_Interacao.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/ferfa/OneDrive/Documentos/GitHub/treinamento2018-g2/G2/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
 =======
 >>>>>>> parent of c7a982b... Merge branch 'master' of https://github.com/FellowshipOfTheGame/treinamento2018-g2
-=======
->>>>>>> parent of 51eb329... Sprites dos imas e botao
     <Reference Include="Unity.PackageManagerUI.Editor">
       <HintPath>C:/Users/ferfa/OneDrive/Documentos/GitHub/treinamento2018-g2/G2/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
