@@ -64,10 +64,26 @@
     <Compile Include="Assets\Acao_Botao.cs" />
     <Compile Include="Assets\Resources\Magnetismo\Scripts\Controle_Ima.cs" />
     <Compile Include="Assets\Resources\Magnetismo\Scripts\LarOnOff.cs" />
+    <Compile Include="Assets\Resources\Magnetismo\Scripts\SpriteIma.cs" />
     <Compile Include="Assets\Resources\Magnetismo\Scripts\VerOnOff.cs" />
     <Compile Include="Assets\Resp_Interacao.cs" />
+    <Compile Include="Assets\Scripts\Criogenia.cs" />
+    <Compile Include="Assets\Scripts\CriogeniaManager.cs" />
+    <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\Scriptable Tiles\BreakableIce.cs" />
+    <Compile Include="Assets\Scripts\Scriptable Tiles\BreakableIceBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Scriptable Tiles\BrokenIce.cs" />
+    <Compile Include="Assets\Scripts\Scriptable Tiles\FrozenGround.cs" />
+    <Compile Include="Assets\Scripts\Scriptable Tiles\Ice.cs" />
+    <Compile Include="Assets\Scripts\Scriptable Tiles\IceBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Scriptable Tiles\Lever.cs" />
+    <Compile Include="Assets\Scripts\Scriptable Tiles\LeverBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Scriptable Tiles\Water.cs" />
+    <Compile Include="Assets\Scripts\Scriptable Tiles\WaterBehaviour.cs" />
+    <Compile Include="Assets\Scripts_Player\Acao_Botao.cs" />
     <Compile Include="Assets\Scripts_Player\Interagir.cs" />
     <Compile Include="Assets\Scripts_Player\Movimento_Player.cs" />
+    <Compile Include="Assets\Scripts_Player\Resp_Interacao.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/ferfa/OneDrive/Documentos/GitHub/treinamento2018-g2/G2/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
