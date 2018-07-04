@@ -22,6 +22,7 @@ MonoBehaviour:
   m_RootView: {fileID: 6}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_MinSize: {x: 950, y: 542}
 =======
   m_MinSize: {x: 950, y: 300}
@@ -29,6 +30,9 @@ MonoBehaviour:
 =======
   m_MinSize: {x: 950, y: 300}
 >>>>>>> parent of 73a9951... Abner merge
+=======
+  m_MinSize: {x: 950, y: 542}
+>>>>>>> parent of 51eb329... Sprites dos imas e botao
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -55,6 +59,7 @@ MonoBehaviour:
   vertical: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   controlID: 47
 =======
   controlID: 88
@@ -62,6 +67,9 @@ MonoBehaviour:
 =======
   controlID: 55
 >>>>>>> parent of 73a9951... Abner merge
+=======
+  controlID: 88
+>>>>>>> parent of 51eb329... Sprites dos imas e botao
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -106,12 +114,17 @@ MonoBehaviour:
     width: 269
     height: 364
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
 =======
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
 >>>>>>> parent of 73a9951... Abner merge
+=======
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+>>>>>>> parent of 51eb329... Sprites dos imas e botao
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -232,6 +245,7 @@ MonoBehaviour:
   vertical: 1
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   controlID: 48
 =======
   controlID: 89
@@ -239,6 +253,9 @@ MonoBehaviour:
 =======
   controlID: 56
 >>>>>>> parent of 73a9951... Abner merge
+=======
+  controlID: 89
+>>>>>>> parent of 51eb329... Sprites dos imas e botao
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -264,6 +281,7 @@ MonoBehaviour:
   vertical: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   controlID: 49
 =======
   controlID: 90
@@ -271,6 +289,9 @@ MonoBehaviour:
 =======
   controlID: 57
 >>>>>>> parent of 73a9951... Abner merge
+=======
+  controlID: 90
+>>>>>>> parent of 51eb329... Sprites dos imas e botao
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -361,6 +382,7 @@ MonoBehaviour:
     m_SearchArea: 0
     m_Folders:
 <<<<<<< HEAD
+<<<<<<< HEAD
     - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 64
@@ -373,12 +395,20 @@ MonoBehaviour:
   m_LastFolders:
   - Assets
 >>>>>>> parent of c7a982b... Merge branch 'master' of https://github.com/FellowshipOfTheGame/treinamento2018-g2
+=======
+    - Assets
+  m_ViewMode: 1
+  m_StartGridSize: 64
+  m_LastFolders:
+  - Assets
+>>>>>>> parent of 51eb329... Sprites dos imas e botao
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\ferfa\OneDrive\Documentos\GitHub\treinamento2018-g2\G2
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -406,6 +436,11 @@ MonoBehaviour:
     m_LastClickedID: 2832
     m_ExpandedIDs: 00000000ee080000f80800005e090000e02f000000ca9a3bffffff7f
 >>>>>>> parent of 73a9951... Abner merge
+=======
+    m_SelectedIDs: e42e0000
+    m_LastClickedID: 12004
+    m_ExpandedIDs: 00000000e42e0000ee2e00007034000000ca9a3bffffff7f
+>>>>>>> parent of 51eb329... Sprites dos imas e botao
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -437,6 +472,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000a02d0000aa2d0000122e0000ac300000
 =======
     m_ExpandedIDs: 00000000ee080000f80800005e090000e02f0000
@@ -450,6 +486,9 @@ MonoBehaviour:
 =======
     m_ExpandedIDs: 00000000ee080000f80800005e090000e02f0000
 >>>>>>> parent of 73a9951... Abner merge
+=======
+    m_ExpandedIDs: 00000000e42e0000ee2e000070340000
+>>>>>>> parent of 51eb329... Sprites dos imas e botao
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -568,10 +607,14 @@ MonoBehaviour:
     m_SelectedIDs: 1e300000
     m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: bef6ffffb8f9ffff00000000
 =======
     m_ExpandedIDs: 32f6ffff00000000
 >>>>>>> parent of c7a982b... Merge branch 'master' of https://github.com/FellowshipOfTheGame/treinamento2018-g2
+=======
+    m_ExpandedIDs: 32f6ffff00000000
+>>>>>>> parent of 51eb329... Sprites dos imas e botao
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -708,11 +751,14 @@ MonoBehaviour:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_HBaseRangeMin: -766
     m_HBaseRangeMax: 766
     m_VBaseRangeMin: -386.5
     m_VBaseRangeMax: 386.5
 =======
+=======
+>>>>>>> parent of 51eb329... Sprites dos imas e botao
     m_HBaseRangeMin: -408
     m_HBaseRangeMax: 408
     m_VBaseRangeMin: -163

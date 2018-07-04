@@ -3236,6 +3236,7 @@ SpriteRenderer:
 --- !u!249 &829644670
 AreaEffector2D:
   serializedVersion: 2
+<<<<<<< HEAD
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -3282,6 +3283,54 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+=======
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 829644667}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGlobalAngle: 0
+  m_ForceAngle: 90
+  m_ForceMagnitude: 10
+  m_ForceVariation: 0
+  m_ForceTarget: 0
+  m_Drag: 0
+  m_AngularDrag: 0
+--- !u!61 &829644671
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 829644667}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 1
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.64, y: 0.64}
+    newSize: {x: 0.64, y: 0.64}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!1 &831667337
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+>>>>>>> parent of 51eb329... Sprites dos imas e botao
   serializedVersion: 5
   m_Component:
   - component: {fileID: 831667338}
@@ -7277,22 +7326,29 @@ GameObject:
   serializedVersion: 5
   m_Component:
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 51eb329... Sprites dos imas e botao
   - component: {fileID: 1943814143}
   - component: {fileID: 1943814145}
   - component: {fileID: 1943814144}
   - component: {fileID: 1943814146}
   m_Layer: 0
   m_Name: Campo
+<<<<<<< HEAD
 =======
   - component: {fileID: 2058044012}
   - component: {fileID: 2058044013}
   m_Layer: 0
   m_Name: Sprite
 >>>>>>> parent of d9e8ab3... Merge branch 'weabner'
+=======
+>>>>>>> parent of 51eb329... Sprites dos imas e botao
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_IsActive: 0
 --- !u!4 &1943814143
@@ -7300,6 +7356,10 @@ GameObject:
   m_IsActive: 1
 --- !u!4 &2058044012
 >>>>>>> parent of d9e8ab3... Merge branch 'weabner'
+=======
+  m_IsActive: 0
+--- !u!4 &1943814143
+>>>>>>> parent of 51eb329... Sprites dos imas e botao
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -7319,6 +7379,9 @@ AreaEffector2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 51eb329... Sprites dos imas e botao
   m_GameObject: {fileID: 1943814142}
   m_Enabled: 1
   m_UseColliderMask: 1
@@ -7363,9 +7426,12 @@ SpriteRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1943814142}
+<<<<<<< HEAD
 =======
   m_GameObject: {fileID: 2058044011}
 >>>>>>> parent of d9e8ab3... Merge branch 'weabner'
+=======
+>>>>>>> parent of 51eb329... Sprites dos imas e botao
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -7486,6 +7552,9 @@ SpriteRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 51eb329... Sprites dos imas e botao
   m_GameObject: {fileID: 2002594142}
   m_Enabled: 1
   m_CastShadows: 0
@@ -7563,9 +7632,12 @@ SpriteRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2004277869}
+<<<<<<< HEAD
 =======
   m_GameObject: {fileID: 2061154750}
 >>>>>>> parent of d9e8ab3... Merge branch 'weabner'
+=======
+>>>>>>> parent of 51eb329... Sprites dos imas e botao
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -7767,6 +7839,9 @@ SpriteRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 51eb329... Sprites dos imas e botao
   m_GameObject: {fileID: 2012581002}
   m_Enabled: 1
   m_CastShadows: 0
@@ -7990,6 +8065,7 @@ BoxCollider2D:
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!212 &2080907241
+<<<<<<< HEAD
 =======
   serializedVersion: 5
   m_Component:
@@ -8017,15 +8093,21 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!212 &2112399409
 >>>>>>> parent of d9e8ab3... Merge branch 'weabner'
+=======
+>>>>>>> parent of 51eb329... Sprites dos imas e botao
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_GameObject: {fileID: 2080907237}
 =======
   m_GameObject: {fileID: 2112399407}
 >>>>>>> parent of d9e8ab3... Merge branch 'weabner'
+=======
+  m_GameObject: {fileID: 2080907237}
+>>>>>>> parent of 51eb329... Sprites dos imas e botao
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
