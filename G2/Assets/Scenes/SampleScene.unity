@@ -113,7 +113,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
-<<<<<<< HEAD
 --- !u!1 &64470795
 GameObject:
   m_ObjectHideFlags: 0
@@ -232,9 +231,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
 --- !u!1 &66420219
-=======
---- !u!1 &519420028
->>>>>>> parent of 1f72061... Finalmente, vou add meu puzzle aqui
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -381,7 +377,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
 --- !u!1 &113041389
 GameObject:
   m_ObjectHideFlags: 0
@@ -8272,5 +8267,3 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
-=======
->>>>>>> parent of 1f72061... Finalmente, vou add meu puzzle aqui
