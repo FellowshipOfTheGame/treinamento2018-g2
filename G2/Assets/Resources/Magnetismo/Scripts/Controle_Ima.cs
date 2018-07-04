@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Controle_Ima : MonoBehaviour {
 
-    public enum Tipo_Ima { Verde, Laranja };
+    public enum Tipo_Ima { Verde, Laranja, Vermelho };
 
     public GameObject campo;
     public Tipo_Ima tipo;
@@ -17,7 +17,7 @@ public class Controle_Ima : MonoBehaviour {
     // Use this for initialization
     void Start() {
 
-        if (tipo == Tipo_Ima.Verde) {
+        /*if (tipo == Tipo_Ima.Verde) {
             sprite = Resources.Load<Sprite>("Magnetismo/Sprites/Ima Ver");
             sprite_campo = Resources.Load<Sprite>("Magnetismo/Sprites/Campo");
         }
@@ -27,7 +27,7 @@ public class Controle_Ima : MonoBehaviour {
         }
 
         campo.GetComponent<SpriteRenderer>().sprite = sprite_campo;
-        GetComponent<SpriteRenderer>().sprite = sprite;
+        GetComponent<SpriteRenderer>().sprite = sprite;*/
 
         campo.GetComponent<BoxCollider2D>().size = new Vector2(1, (float)alcance);
         campo.GetComponent<Transform>().parent.SetParent(GetComponent<Transform>());
