@@ -1,7 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 G2/Temp/UnityLockfile
 =======
+=======
+>>>>>>> parent of d2e7e44... Revert "Merge branch 'master' of https://github.com/FellowshipOfTheGame/treinamento2018-g2"
 [Ll]ibrary/
 [Tt]emp/
 [Oo]bj/
@@ -37,5 +40,9 @@ sysinfo.txt
 
 # Builds
 *.apk
+<<<<<<< HEAD
+*.unitypackage
+>>>>>>> parent of d2e7e44... Revert "Merge branch 'master' of https://github.com/FellowshipOfTheGame/treinamento2018-g2"
+=======
 *.unitypackage
 >>>>>>> parent of d2e7e44... Revert "Merge branch 'master' of https://github.com/FellowshipOfTheGame/treinamento2018-g2"
