@@ -21,7 +21,11 @@ MonoBehaviour:
   m_Title: 
   m_RootView: {fileID: 6}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_MinSize: {x: 950, y: 542}
+=======
+  m_MinSize: {x: 950, y: 300}
+>>>>>>> parent of 73a9951... Abner merge
 =======
   m_MinSize: {x: 950, y: 300}
 >>>>>>> parent of 73a9951... Abner merge
@@ -378,6 +382,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_SelectedIDs: d42d0000
     m_LastClickedID: 11732
     m_ExpandedIDs: 00000000a02d0000aa2d0000122e0000ac30000000ca9a3bffffff7f
@@ -391,6 +396,11 @@ MonoBehaviour:
     m_LastClickedID: 12004
     m_ExpandedIDs: 00000000e42e0000ee2e00007034000000ca9a3bffffff7f
 >>>>>>> parent of c7a982b... Merge branch 'master' of https://github.com/FellowshipOfTheGame/treinamento2018-g2
+=======
+    m_SelectedIDs: 100b0000
+    m_LastClickedID: 2832
+    m_ExpandedIDs: 00000000ee080000f80800005e090000e02f000000ca9a3bffffff7f
+>>>>>>> parent of 73a9951... Abner merge
 =======
     m_SelectedIDs: 100b0000
     m_LastClickedID: 2832
@@ -426,6 +436,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000a02d0000aa2d0000122e0000ac300000
 =======
     m_ExpandedIDs: 00000000ee080000f80800005e090000e02f0000
@@ -433,6 +444,9 @@ MonoBehaviour:
 =======
     m_ExpandedIDs: 00000000e42e0000ee2e000070340000
 >>>>>>> parent of c7a982b... Merge branch 'master' of https://github.com/FellowshipOfTheGame/treinamento2018-g2
+=======
+    m_ExpandedIDs: 00000000ee080000f80800005e090000e02f0000
+>>>>>>> parent of 73a9951... Abner merge
 =======
     m_ExpandedIDs: 00000000ee080000f80800005e090000e02f0000
 >>>>>>> parent of 73a9951... Abner merge
