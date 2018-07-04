@@ -14,3 +14,4 @@ Cmd: compileSnippet
 >>>>>>> weabner
 Cmd: initializeCompiler
 Cmd: initializeCompiler
+Cmd: initializeCompiler
