@@ -693,7 +693,6 @@ MonoBehaviour:
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
 <<<<<<< HEAD
-<<<<<<< HEAD
     m_SelectedIDs: 100b0000
     m_LastClickedID: 2832
     m_ExpandedIDs: 00000000ee080000f80800005e090000e02f000000ca9a3bffffff7f
@@ -702,11 +701,6 @@ MonoBehaviour:
     m_LastClickedID: 9454
     m_ExpandedIDs: d42a0000
 >>>>>>> weabner
-=======
-    m_SelectedIDs: 100b0000
-    m_LastClickedID: 2832
-    m_ExpandedIDs: 00000000ee080000f80800005e090000e02f000000ca9a3bffffff7f
->>>>>>> parent of ccf1c95... Nada
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -735,14 +729,10 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
 <<<<<<< HEAD
-<<<<<<< HEAD
     m_ExpandedIDs: 00000000ee080000f80800005e090000e02f0000
 =======
     m_ExpandedIDs: d42a0000
 >>>>>>> weabner
-=======
-    m_ExpandedIDs: 00000000ee080000f80800005e090000e02f0000
->>>>>>> parent of ccf1c95... Nada
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
