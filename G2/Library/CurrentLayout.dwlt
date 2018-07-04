@@ -334,9 +334,15 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: d42d0000
     m_LastClickedID: 11732
     m_ExpandedIDs: 00000000a02d0000aa2d0000122e0000ac30000000ca9a3bffffff7f
+=======
+    m_SelectedIDs: 100b0000
+    m_LastClickedID: 2832
+    m_ExpandedIDs: 00000000ee080000f80800005e090000e02f000000ca9a3bffffff7f
+>>>>>>> parent of e86c4fb... Merge branch 'master' of https://github.com/FellowshipOfTheGame/treinamento2018-g2
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -364,7 +370,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000a02d0000aa2d0000122e0000ac300000
+=======
+    m_ExpandedIDs: 00000000ee080000f80800005e090000e02f0000
+>>>>>>> parent of e86c4fb... Merge branch 'master' of https://github.com/FellowshipOfTheGame/treinamento2018-g2
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
