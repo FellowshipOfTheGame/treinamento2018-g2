@@ -7,6 +7,8 @@ TagManager:
   - Clone
   - Minus
   - Plus
+  - Player1
+  - Cloner
   layers:
   - Default
   - TransparentFX
