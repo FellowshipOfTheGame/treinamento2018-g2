@@ -9,6 +9,9 @@ TagManager:
   - Plus
   - Player1
   - Cloner
+  - Door
+  - Player2
+  - Button
   layers:
   - Default
   - TransparentFX
@@ -18,8 +21,8 @@ TagManager:
   - UI
   - 
   - 
-  - Field
-  - Objects
+  - 
+  - 
   - 
   - 
   - 

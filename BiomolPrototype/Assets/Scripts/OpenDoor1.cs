@@ -6,14 +6,14 @@ public class OpenDoor1 : MonoBehaviour {
 
     private ActivateMinus am;
     private ActvatePlus ap;
-    public GameObject door1, door2;
+    public GameObject door1, door2, clone;
     public bool isOpen = false;
     
 	// Use this for initialization
 	void Start () {
         ap = GameObject.FindGameObjectWithTag("Plus").GetComponent<ActvatePlus>();
         am = GameObject.FindGameObjectWithTag("Minus").GetComponent<ActivateMinus>();
-        
+       
     }
 	
 	// Update is called once per frame
@@ -23,6 +23,8 @@ public class OpenDoor1 : MonoBehaviour {
             isOpen = true;
             door1.transform.Translate(0, -3, 0);
             door2.transform.Translate(0, 3, 0);
+            clone = GameObject.FindGameObjectWithTag("Clone");
+            Destroy(clone);
         }
 	}
 }
