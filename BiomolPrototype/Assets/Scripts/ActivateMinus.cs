@@ -6,6 +6,24 @@ public class ActivateMinus : MonoBehaviour {
 
     public bool isActive = false;
 
+    public GameObject clone;
+
+    private void Start()
+    {
+        
+    }
+    private void Update()
+    {
+
+        if (clone == null)
+        {
+            clone = GameObject.FindGameObjectWithTag("Clone");
+            if (isActive)
+            {
+                isActive = false;
+            }
+        }
+    }
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player1") || other.CompareTag("Clone"))

@@ -6,7 +6,9 @@ public class FireCollider : MonoBehaviour {
     private GameObject clone;
     public GameObject player1;
     private bool isDone=false, fireUp=true;
+    public Vector3 initPos;
 
+   
 
     private void Update()
     {
@@ -21,7 +23,7 @@ public class FireCollider : MonoBehaviour {
     {
         if (collision.CompareTag("Player1"))
         {
-           player1.transform.position = new Vector3(-6,0,10.86f);
+            player1.transform.position = initPos;
 
             if (clone != null)
             {
@@ -36,6 +38,7 @@ public class FireCollider : MonoBehaviour {
             Destroy(clone);
             player1.GetComponent<PlayerController>().isCloned = false;
             isDone = false;
+
         }
     }
     

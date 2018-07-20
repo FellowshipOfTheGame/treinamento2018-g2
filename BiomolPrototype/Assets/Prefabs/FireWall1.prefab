@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4051074704060808}
   - component: {fileID: 212465158714221038}
   - component: {fileID: 95998812462158606}
-  - component: {fileID: 114880001817739580}
   m_Layer: 0
   m_Name: FireAnimated(2)
   m_TagString: Untagged
@@ -39,7 +38,6 @@ GameObject:
   - component: {fileID: 4461227931182940}
   - component: {fileID: 212210419005796188}
   - component: {fileID: 95858882799678188}
-  - component: {fileID: 114528576467309334}
   m_Layer: 0
   m_Name: FireAnimated (1)
   m_TagString: Untagged
@@ -74,7 +72,6 @@ GameObject:
   - component: {fileID: 4783391213175550}
   - component: {fileID: 212180590688941242}
   - component: {fileID: 95838180225455694}
-  - component: {fileID: 114267282039237902}
   m_Layer: 0
   m_Name: FireAnimated
   m_TagString: Untagged
@@ -115,7 +112,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1476430553861566}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.89, y: -2.77, z: -1}
+  m_LocalPosition: {x: -5.89, y: -2.77, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4783391213175550}
@@ -216,28 +213,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114267282039237902
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1998458483075786}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f72dd8dbfcc2534197abf5c1e4949e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114528576467309334
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1420631423733476}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f72dd8dbfcc2534197abf5c1e4949e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114828443027249342
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -249,17 +224,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f72dd8dbfcc2534197abf5c1e4949e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114880001817739580
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1341325356087030}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f72dd8dbfcc2534197abf5c1e4949e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  player1: {fileID: 0}
 --- !u!212 &212180590688941242
 SpriteRenderer:
   m_ObjectHideFlags: 1
