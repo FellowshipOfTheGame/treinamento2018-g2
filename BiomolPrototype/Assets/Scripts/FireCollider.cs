@@ -5,7 +5,7 @@ using UnityEngine;
 public class FireCollider : MonoBehaviour {
     private GameObject clone;
     public GameObject player1;
-    private bool isDone=false, fireUp=true;
+    private bool isDone=false;
     public Vector3 initPos;
 
    
