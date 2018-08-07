@@ -4,17 +4,12 @@ using UnityEngine;
 
 public class OpenDoor1 : MonoBehaviour {
 
-    private ActivateMinus am;
-    private ActvatePlus ap;
+    public ActivateMinus am;
+    public ActvatePlus ap;
     public GameObject door1, door2, clone;
     public bool isOpen = false;
     
-	// Use this for initialization
-	void Start () {
-        ap = GameObject.FindGameObjectWithTag("Plus").GetComponent<ActvatePlus>();
-        am = GameObject.FindGameObjectWithTag("Minus").GetComponent<ActivateMinus>();
-       
-    }
+
 	
 	// Update is called once per frame
 	void Update () {

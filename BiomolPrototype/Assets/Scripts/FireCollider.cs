@@ -5,7 +5,7 @@ using UnityEngine;
 public class FireCollider : MonoBehaviour {
     private GameObject clone;
     public GameObject player1;
-    private bool isDone=false, fireUp=true;
+    private bool isDone=false;
     public Vector3 initPos;
 
    
@@ -35,7 +35,7 @@ public class FireCollider : MonoBehaviour {
         }
         if (collision.CompareTag("Clone"))
         {
-            Destroy(clone);
+            Destroy(collision.gameObject);
             player1.GetComponent<PlayerController>().isCloned = false;
             isDone = false;
 
