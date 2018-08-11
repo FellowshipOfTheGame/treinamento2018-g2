@@ -11,18 +11,7 @@ public class Resp_Interacao : MonoBehaviour
 
     public virtual void Acao()
     {
-
+        
     }
-
-    // Use this for initialization
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
+ 
 }

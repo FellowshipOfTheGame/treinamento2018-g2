@@ -12,6 +12,9 @@ public class Interagir : MonoBehaviour
     private Movimento_Player.Orientacao orientacao;
     private Resp_Interacao resp_int;
 
+    [SerializeField]
+    private string Interacao;
+
     // Use this for initialization
     void Start()
     {
@@ -35,23 +38,23 @@ public class Interagir : MonoBehaviour
 
         hit = Physics2D.Raycast(transform.position, ray_direction, distancia);  //"executa" o ray_cast
 
-        if (Input.GetButtonDown("Interagir"))
+        if (Input.GetButtonDown(Interacao))
         {
 
             if (hit.collider != null)
             {
 
-                resp_int = hit.collider.GetComponent(typeof(Resp_Interacao)) as Resp_Interacao;
+                resp_int = hit.collider.GetComponent<Resp_Interacao>();
 
-                resp_int.set_player(gameObject);
+                if(resp_int != null)
+                {
+                    resp_int.set_player(this.gameObject);
 
-                resp_int.Acao();
-
-                
-
+                    resp_int.Acao();
+                }
             }
         }
-        if (hit.collider != null)
-            Debug.Log("hit.collider.name = " + hit.collider.name);
+        //if (hit.collider != null)
+        //    Debug.Log("hit.collider.name = " + hit.collider.name);
     }
 }

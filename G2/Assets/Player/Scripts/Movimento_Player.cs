@@ -16,6 +16,11 @@ public class Movimento_Player : MonoBehaviour
     private Rigidbody2D rb;
     private Orientacao orientacao;
     public Orientacao get_orientacao() { return orientacao; }
+    public bool isInControl = true;
+    public int playerIndex;
+
+    [SerializeField]
+    private string Correr, Horizontal, Vertical;
 
     // Use this for initialization
     void Start()
@@ -28,48 +33,63 @@ public class Movimento_Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        //MOVIMENTO
-        rb.velocity = new Vector2(Input.GetAxis("Horizontal") * velocidade, Input.GetAxis("Vertical") * velocidade); //define a componente velocity a partir de um vetor
-
-        if (rb.velocity.magnitude != 0f)                                               //analisa o angulo em que o personagem
-        {                                                                              //se move, indo de 0 a 359 graus
-            if (Input.GetAxis("Vertical") >= 0)                                      
-                angulo = Vector2.Angle(new Vector2(1, 0), rb.velocity);              
-            else if (Input.GetAxis("Vertical") < 0)
-                angulo = 360 - Vector2.Angle(new Vector2(1, 0), rb.velocity);
-        }
-
-        //CONTROLE DA ORIENTAÇÃO
-        if (angulo <= 60 || angulo >= 300)                                      //muda o valor da variavel orientacao
-            orientacao = Orientacao.Direita;                                    //dependendo do angulo em que
-        else if (angulo > 60 && angulo < 120)                                   //o personagem se move
-            orientacao = Orientacao.Cima;
-        else if (angulo >= 120 && angulo <= 250)
-            orientacao = Orientacao.Esquerda;
-        else
-            orientacao = Orientacao.Baixo;
-
-
-        //CORRER
-        if (correndo == false)
+        // Verifica se o player pode se mover/interagir
+        if(isInControl)
         {
+            if(rb.velocity == Vector2.zero)
+                Criogenia.lastSafePos[playerIndex] = this.gameObject.transform.position;
+            //MOVIMENTO
+            rb.velocity = new Vector2(Input.GetAxis(Horizontal) * velocidade, Input.GetAxis(Vertical) * velocidade); //define a componente velocity a partir de um vetor
 
-            if (Input.GetButtonUp("Correr") && rb.velocity.magnitude != 0f)
-            {
-                velocidade *= 2;
-                correndo = true;
+            if (rb.velocity.magnitude != 0f)                                               //analisa o angulo em que o personagem
+            {                                                                              //se move, indo de 0 a 359 graus
+                if (Input.GetAxis(Vertical) >= 0)                                      
+                    angulo = Vector2.Angle(new Vector2(1, 0), rb.velocity);              
+                else if (Input.GetAxis(Vertical) < 0)
+                    angulo = 360 - Vector2.Angle(new Vector2(1, 0), rb.velocity);
             }
 
+            //CONTROLE DA ORIENTAÇÃO
+            if (angulo <= 60 || angulo >= 300)                                      //muda o valor da variavel orientacao
+                orientacao = Orientacao.Direita;                                    //dependendo do angulo em que
+            else if (angulo > 60 && angulo < 120)                                   //o personagem se move
+                orientacao = Orientacao.Cima;
+            else if (angulo >= 120 && angulo <= 250)
+                orientacao = Orientacao.Esquerda;
+            else
+                orientacao = Orientacao.Baixo;
+
+
+            //CORRER
+            if (correndo == false)
+            {
+
+                if (Input.GetButtonDown(Correr) && rb.velocity.magnitude != 0f)
+                {
+                    velocidade *= 2;
+                    correndo = true;
+                }
+
+            }
+            else
+            {
+
+                if (Input.GetButtonUp(Correr) || rb.velocity.magnitude == 0f)
+                {
+                    velocidade /= 2;
+                    correndo = false;
+                }
+            }
         }
         else
         {
-
-            if (Input.GetButtonUp("Correr") || rb.velocity.magnitude == 0f)
+            if((!IceBehaviour.isPlayer1OnIce && playerIndex == 1) || (!IceBehaviour.isPlayer2OnIce && playerIndex == 2))
             {
-                velocidade /= 2;
-                correndo = false;
+                Debug.Log("Stop.");
+                rb.velocity = Vector2.zero;
+                isInControl = true;
             }
+
         }
     }
 }

@@ -2,25 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using UnityEngine.Events;
 
 public class CriogeniaManager : MonoBehaviour {
-
+	
 	[SerializeField]
-	private Tile[] iceWater = new Tile[2], frozenGround = new Tile[2], breakIce = new Tile[2];
-	private Tilemap tilemap1;
-	private Tilemap tilemap2;
-
-	void Awake()
-	{
-		tilemap1 = GameObject.Find("Ice1").GetComponent<Tilemap>();
-		tilemap2 = GameObject.Find("Ice2").GetComponent<Tilemap>();
-	}
+	private GameObject Ice1, Ice2, Water1, Water2, BreakableIce1, BreakableIce2;
 
 	void Update()
 	{
 		if(Input.GetKeyDown(KeyCode.H))
 			Criogenia.SwapRoomTemp(1);
-		if(Input.GetKeyDown(KeyCode.H))
+		if(Input.GetKeyDown(KeyCode.B))
 			Criogenia.SwapRoomTemp(2);
 	}
 
@@ -30,52 +23,35 @@ public class CriogeniaManager : MonoBehaviour {
 		{
 			if(index == 1)
 			{
-				foreach(var tile in GameObject.FindGameObjectsWithTag("Tile"))
-				{
-					if(tile.GetComponent<Transform>().parent.gameObject == tilemap1.gameObject)
-						Destroy(tile);
-				}
-				tilemap1.SwapTile(iceWater[0],iceWater[1]);
-				tilemap1.SwapTile(frozenGround[0],frozenGround[1]);
-				tilemap1.SwapTile(breakIce[0],breakIce[1]);
-				tilemap1.RefreshAllTiles();
+				Ice1.SetActive(false);
+				Water1.SetActive(true);
+				foreach (var tile in BreakableIce1.GetComponentsInChildren<BreakableIceBehaviour>())
+					tile.Break();
+
 			}
 			else if(index == 2)
 			{
-				foreach(var tile in GameObject.FindGameObjectsWithTag("Tile"))
-				{
-					if(tile.GetComponent<Transform>().parent.gameObject == tilemap2.gameObject)
-						Destroy(tile);
-				}
-				tilemap2.SwapTile(iceWater[0],iceWater[1]);
-				tilemap2.SwapTile(frozenGround[0],frozenGround[1]);
-				tilemap2.SwapTile(breakIce[0],breakIce[1]);
-				tilemap2.RefreshAllTiles();
+				Ice2.SetActive(false);
+				Water2.SetActive(true);
+				foreach (var tile in BreakableIce2.GetComponentsInChildren<BreakableIceBehaviour>())
+					tile.Break();
 			}
 		}
 		else if(temperature == Criogenia.Temperature.Hot)
 		{
 			if(index == 1)
 			{
-				foreach(var tile in GameObject.FindGameObjectsWithTag("Tile"))
-				{
-					if(tile.GetComponent<Transform>().parent.gameObject == tilemap1.gameObject)
-						Destroy(tile);
-				}
-				tilemap1.SwapTile(iceWater[1],iceWater[0]);
-				tilemap1.SwapTile(frozenGround[1],frozenGround[0]);
-				tilemap1.SwapTile(breakIce[1],breakIce[0]);
+				Ice1.SetActive(true);
+				Water1.SetActive(false);
+				foreach (var tile in BreakableIce1.GetComponentsInChildren<BreakableIceBehaviour>())
+					tile.Regen();
 			}
 			else if(index == 2)
 			{
-				foreach(var tile in GameObject.FindGameObjectsWithTag("Tile"))
-				{
-					if(tile.GetComponent<Transform>().parent.gameObject == tilemap2.gameObject)
-						Destroy(tile);
-				}
-				tilemap2.SwapTile(iceWater[1],iceWater[0]);
-				tilemap2.SwapTile(frozenGround[1],frozenGround[0]);
-				tilemap2.SwapTile(breakIce[1],breakIce[0]);
+				Ice2.SetActive(true);
+				Water2.SetActive(false);
+				foreach (var tile in BreakableIce2.GetComponentsInChildren<BreakableIceBehaviour>())
+					tile.Regen();
 			}
 		}
 	}
