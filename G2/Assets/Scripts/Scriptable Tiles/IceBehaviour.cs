@@ -16,14 +16,12 @@ public class IceBehaviour : MonoBehaviour {
 	private GameObject currentPlayer;
 	public bool isEnabled = true;
 
-	void Start()
+	void OnEnable()
 	{
-		if(transform.position.x < GameObject.Find("Criogenia").transform.position.x)
-			index = 1;
-		else
-			index = 2;
+		index = Criogenia.GetIndex(this.transform.position);
 
-		Criogenia.tileTypeIndex.Add(new Vector2Int((int)this.transform.position.x, (int)this.transform.position.y),Criogenia.TileType.Ice);
+		Criogenia.tileTypeIndex[index-1].Remove(new Vector2Int((int)this.transform.position.x, (int)this.transform.position.y));
+		Criogenia.tileTypeIndex[index-1].Add(new Vector2Int((int)this.transform.position.x, (int)this.transform.position.y),Criogenia.TileType.Ice);
 	}
 
 	void OnTriggerEnter2D(Collider2D other)
@@ -34,11 +32,6 @@ public class IceBehaviour : MonoBehaviour {
 			hasStopped = false;
 			other.gameObject.GetComponent<Movimento_Player>().isInControl = false;
 			playerSpeed = other.gameObject.GetComponent<Rigidbody2D>().velocity;
-
-			if(currentPlayer.GetComponent<Movimento_Player>().playerIndex == 1)
-				isPlayer1OnIce = true;
-			else
-				isPlayer2OnIce = true;
 				
 			if(playerSpeed != Vector2.zero)
 			{
@@ -70,10 +63,6 @@ public class IceBehaviour : MonoBehaviour {
 	{
 		if(other.gameObject.CompareTag("Player") && isEnabled)
 		{
-			if(currentPlayer.GetComponent<Movimento_Player>().playerIndex == 1)
-				isPlayer1OnIce = true;
-			else
-				isPlayer2OnIce = true;
 
 			Vector2 currentSpeed = other.gameObject.GetComponent<Rigidbody2D>().velocity;
 			//other.gameObject.GetComponent<PlayerController>().isInControl = false;
@@ -102,25 +91,5 @@ public class IceBehaviour : MonoBehaviour {
 				}
 			}
 		}
-	}
-
-	void OnTriggerExit2D(Collider2D other)
-	{
-		if(other.gameObject.CompareTag("Player") && isEnabled)
-		{
-			if(currentPlayer.GetComponent<Movimento_Player>().playerIndex == 1)
-				isPlayer1OnIce = false;
-			else
-				isPlayer2OnIce = false;
-		}
-	}
-
-	private void OnDisable()
-	{
-		if(currentPlayer != null)
-			if(currentPlayer.GetComponent<Movimento_Player>().playerIndex == 1)
-				isPlayer1OnIce = false;
-			else
-				isPlayer2OnIce = false;
 	}
 }

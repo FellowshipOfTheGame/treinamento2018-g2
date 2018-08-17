@@ -6,13 +6,17 @@ public class LeverBehaviour : Resp_Interacao {
 
 	public bool isActive = true;
 	public int index;
+	public bool startingState, currentState;
 
 	void Start()
 	{
-		if(transform.position.x < GameObject.Find("Criogenia").transform.position.x)
-			index = 1;
+		index = Criogenia.GetIndex(this.transform.position);
+		currentState = startingState;
+		if(currentState)
+			this.gameObject.GetComponent<SpriteRenderer>().color = Color.green;
 		else
-			index = 2;
+			this.gameObject.GetComponent<SpriteRenderer>().color = Color.red;
+		Criogenia.leverLayout.Add(this);
 	}
 
 	public override void Acao()
@@ -20,8 +24,17 @@ public class LeverBehaviour : Resp_Interacao {
 		//Criogenia.lastLever = this;
 		if(isActive)
 			{
-				Debug.Log("CLick");
+				Debug.Log("Click");
 				//isActive = false;
+				currentState = !currentState;
+
+				if(currentState)
+					this.gameObject.GetComponent<SpriteRenderer>().color = Color.green;
+				else
+					this.gameObject.GetComponent<SpriteRenderer>().color = Color.red;
+
+				Criogenia.CheckWinCondition();
+
 				if(index == 1)
 					Criogenia.SwapRoomTemp(2);
 				else if(index == 2)

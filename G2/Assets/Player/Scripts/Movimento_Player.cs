@@ -33,11 +33,15 @@ public class Movimento_Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        playerIndex = Criogenia.GetIndex(this.transform.position);
+
         // Verifica se o player pode se mover/interagir
         if(isInControl)
         {
             if(rb.velocity == Vector2.zero)
-                Criogenia.lastSafePos[playerIndex] = this.gameObject.transform.position;
+            {
+                Criogenia.lastSafePosList[playerIndex-1].Push(this.gameObject.transform.position);
+            }
             //MOVIMENTO
             rb.velocity = new Vector2(Input.GetAxis(Horizontal) * velocidade, Input.GetAxis(Vertical) * velocidade); //define a componente velocity a partir de um vetor
 
@@ -83,7 +87,8 @@ public class Movimento_Player : MonoBehaviour
         }
         else
         {
-            if((!IceBehaviour.isPlayer1OnIce && playerIndex == 1) || (!IceBehaviour.isPlayer2OnIce && playerIndex == 2))
+            if((Criogenia.WhichTileIsPlayerAt(this.gameObject.transform.position, playerIndex) == Criogenia.TileType.Dry && playerIndex == 1) ||
+            (Criogenia.WhichTileIsPlayerAt(this.gameObject.transform.position, playerIndex) == Criogenia.TileType.Dry && playerIndex == 2))
             {
                 Debug.Log("Stop.");
                 rb.velocity = Vector2.zero;

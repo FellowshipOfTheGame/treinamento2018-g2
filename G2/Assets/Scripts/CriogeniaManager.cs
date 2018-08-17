@@ -6,8 +6,8 @@ using UnityEngine.Events;
 
 public class CriogeniaManager : MonoBehaviour {
 	
-	[SerializeField]
-	private GameObject Ice1, Ice2, Water1, Water2, BreakableIce1, BreakableIce2;
+		[SerializeField]private GameObject Ice1, Ice2, Water1, Water2, BreakableIce1, BreakableIce2;
+	
 
 	void Update()
 	{
@@ -19,6 +19,13 @@ public class CriogeniaManager : MonoBehaviour {
 
 	public void SwapTemperature(int index, Criogenia.Temperature temperature)
 	{
+		foreach(var player in GameObject.FindGameObjectsWithTag("Player"))
+			if(player.GetComponent<Movimento_Player>().playerIndex == index)
+			{
+				player.GetComponent<Movimento_Player>().isInControl = true;
+				player.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+			}
+
 		if(temperature == Criogenia.Temperature.Cold)
 		{
 			if(index == 1)
@@ -54,5 +61,10 @@ public class CriogeniaManager : MonoBehaviour {
 					tile.Regen();
 			}
 		}
+	}
+
+	public void EndGame()
+	{
+		Debug.Log("YouWin");
 	}
 }

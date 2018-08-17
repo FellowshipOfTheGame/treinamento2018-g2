@@ -21,13 +21,21 @@ public class BreakableIceBehaviour : MonoBehaviour {
 
 		Regen();
 	}
-  
+	
+	private void OnEnable()
+	{
+		Criogenia.tileTypeIndex[Criogenia.GetIndex(this.transform.position)-1].Remove(new Vector2Int((int)this.transform.position.x, (int)this.transform.position.y));
+		Criogenia.tileTypeIndex[Criogenia.GetIndex(this.transform.position)-1].Add(new Vector2Int((int)this.transform.position.x, (int)this.transform.position.y),Criogenia.TileType.Ice);
+	}
+
 	public void Break()
 	{
 		waterBehaviour.isEnabled = true;
 		iceBehaviour.isEnabled = false;
 		collider.size = new Vector2(0.7f,0.7f);
 		renderer.sprite = brokenIce;
+		Criogenia.tileTypeIndex[Criogenia.GetIndex(this.transform.position)-1].Remove(new Vector2Int((int)this.transform.position.x, (int)this.transform.position.y));
+		Criogenia.tileTypeIndex[Criogenia.GetIndex(this.transform.position)-1].Add(new Vector2Int((int)this.transform.position.x, (int)this.transform.position.y),Criogenia.TileType.Water);
 	}
 
 	public void Regen()
@@ -36,6 +44,8 @@ public class BreakableIceBehaviour : MonoBehaviour {
 		iceBehaviour.isEnabled = true;
 		collider.size = new Vector2(1,1);
 		renderer.sprite = breakableIce;
+		Criogenia.tileTypeIndex[Criogenia.GetIndex(this.transform.position)-1].Remove(new Vector2Int((int)this.transform.position.x, (int)this.transform.position.y));
+		Criogenia.tileTypeIndex[Criogenia.GetIndex(this.transform.position)-1].Add(new Vector2Int((int)this.transform.position.x, (int)this.transform.position.y),Criogenia.TileType.Ice);
 	}
 
 	private void OnTriggerExit2D(Collider2D other)
