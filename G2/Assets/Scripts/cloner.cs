@@ -9,13 +9,13 @@ public class cloner : MonoBehaviour {
 
     public void Start()
     {
-        pc = GameObject.FindGameObjectWithTag("Player1").GetComponent<PlayerController>();
+        pc = GameObject.Find("Player1").GetComponent<PlayerController>();
     }
 
     
     public void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player1") && !pc.isCloned)
+        if (other.CompareTag("Player") && !pc.isCloned)
         {
             pc.isCloned = true;
             Vector3Int pos = new Vector3Int((int)other.transform.position.x-3, (int)other.transform.position.y, (int)other.transform.position.z);

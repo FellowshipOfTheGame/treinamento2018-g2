@@ -6,6 +6,14 @@ TagManager:
   tags:
   - Ima
   - Tile
+  - Door
+  - Player1
+  - Player2
+  - Minus
+  - Plus
+  - Button
+  - Cloner
+  - Clone
   layers:
   - Default
   - TransparentFX

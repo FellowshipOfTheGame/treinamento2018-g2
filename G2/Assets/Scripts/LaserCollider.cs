@@ -8,7 +8,7 @@ public class LaserCollider : MonoBehaviour {
     
     private void OnTriggerEnter2D(Collider2D collision)
     {
-            if(collision.CompareTag("Player1") || collision.CompareTag("Clone")){
+            if(collision.CompareTag("Player") || collision.CompareTag("Clone")){
             collision.GetComponent<Movimento_Player>().enabled = false;            
             StartCoroutine(Paralize(collision));
         }

@@ -21,7 +21,7 @@ public class FireCollider : MonoBehaviour {
     
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player1"))
+        if (collision.CompareTag("Player"))
         {
             player1.transform.position = initPos;
 
