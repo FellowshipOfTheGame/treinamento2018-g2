@@ -18,8 +18,8 @@ public class LarOnOff : Resp_Interacao {
 
         sprRen = GetComponent<SpriteRenderer>();
 
-        sprite_on = Resources.Load<Sprite>("Magnetismo/Sprites/clicado_lar");// as Sprite;
-        sprite_off = Resources.Load<Sprite>("Magnetismo/Sprites/normal_lar");// as Sprite;
+        sprite_on = Resources.Load<Sprite>("Magnetismo/Sprites/Props/clicado_lar");// as Sprite;
+        sprite_off = Resources.Load<Sprite>("Magnetismo/Sprites/Props/normal_lar");// as Sprite;
 
     }
 

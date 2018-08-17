@@ -51,7 +51,7 @@ public class Interagir : MonoBehaviour
 
             }
         }
-        if (hit.collider != null)
+        //if (hit.collider != null)
             Debug.Log("hit.collider.name = " + hit.collider.name);
     }
 }

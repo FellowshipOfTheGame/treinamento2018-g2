@@ -20,8 +20,8 @@ public class VerOnOff : Resp_Interacao
 
         sprRen = GetComponent<SpriteRenderer>();
 
-        sprite_on = Resources.Load<Sprite>("Magnetismo/Sprites/clicado_ver");// as Sprite;
-        sprite_off = Resources.Load<Sprite>("Magnetismo/Sprites/normal_ver");// as Sprite;
+        sprite_on = Resources.Load<Sprite>("Magnetismo/Sprites/Props/clicado_ver");// as Sprite;
+        sprite_off = Resources.Load<Sprite>("Magnetismo/Sprites/Props/normal_ver");// as Sprite;
 
     }
 

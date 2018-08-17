@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ima
   - Tile
+  - Menu_pause
   layers:
   - Default
   - TransparentFX

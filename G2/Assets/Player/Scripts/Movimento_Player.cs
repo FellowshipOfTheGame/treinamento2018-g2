@@ -52,7 +52,7 @@ public class Movimento_Player : MonoBehaviour
 
 
         //CORRER
-        if (correndo == false)
+        /*if (correndo == false)
         {
 
             if (Input.GetButtonUp("Correr") && rb.velocity.magnitude != 0f)
@@ -70,6 +70,6 @@ public class Movimento_Player : MonoBehaviour
                 velocidade /= 2;
                 correndo = false;
             }
-        }
+        }*/
     }
 }
