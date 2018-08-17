@@ -2532,6 +2532,7 @@ Prefab:
     m_RemovedComponents:
     - {fileID: 114932308319651320, guid: e709c8677e005fa49a0072ea6cdc2b6e, type: 2}
     - {fileID: 114362595222205906, guid: e709c8677e005fa49a0072ea6cdc2b6e, type: 2}
+    - {fileID: 114416269014574734, guid: e709c8677e005fa49a0072ea6cdc2b6e, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: e709c8677e005fa49a0072ea6cdc2b6e, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &656156158 stripped

@@ -38,11 +38,12 @@ public class Interagir : MonoBehaviour
         if (Input.GetButtonDown("Interagir"))
         {
 
+            Debug.Log(ray_direction.ToString());
             if (hit.collider != null)
             {
 
                 resp_int = hit.collider.GetComponent(typeof(Resp_Interacao)) as Resp_Interacao;
-                
+                Debug.Log(hit.collider.name);
                 resp_int.set_player(gameObject);
 
 
