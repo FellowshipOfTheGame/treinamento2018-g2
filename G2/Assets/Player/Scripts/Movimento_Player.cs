@@ -68,11 +68,17 @@ public class Movimento_Player : MonoBehaviour
             if (correndo == false)
             {
 
+<<<<<<< HEAD
                 if (Input.GetButtonDown(Correr) && rb.velocity.magnitude != 0f)
                 {
                     velocidade *= 2;
                     correndo = true;
                 }
+=======
+        //CORRER
+        /*if (correndo == false)
+        {
+>>>>>>> origin/fernando
 
             }
             else
@@ -94,7 +100,11 @@ public class Movimento_Player : MonoBehaviour
                 rb.velocity = Vector2.zero;
                 isInControl = true;
             }
+<<<<<<< HEAD
 
         }
+=======
+        }*/
+>>>>>>> origin/fernando
     }
 }

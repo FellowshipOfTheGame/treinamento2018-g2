@@ -55,6 +55,10 @@ public class Interagir : MonoBehaviour
             }
         }
         //if (hit.collider != null)
+<<<<<<< HEAD
         //    Debug.Log("hit.collider.name = " + hit.collider.name);
+=======
+            Debug.Log("hit.collider.name = " + hit.collider.name);
+>>>>>>> origin/fernando
     }
 }
