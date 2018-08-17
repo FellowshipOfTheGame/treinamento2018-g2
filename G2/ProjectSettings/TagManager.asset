@@ -3,7 +3,15 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Clone
+  - Minus
+  - Plus
+  - Player1
+  - Cloner
+  - Door
+  - Player2
+  - Button
   layers:
   - Default
   - TransparentFX
