@@ -18,6 +18,7 @@ public class Movimento_Player : MonoBehaviour
     public Orientacao get_orientacao() { return orientacao; }
     public bool isInControl = true;
     public int playerIndex;
+    public Animator animator;
 
     [SerializeField]
     private string Correr, Horizontal, Vertical;
@@ -63,6 +64,9 @@ public class Movimento_Player : MonoBehaviour
             else
                 orientacao = Orientacao.Baixo;
 
+            animator.SetFloat("SpeedVertical", Mathf.Abs(rb.velocity.y));
+            animator.SetFloat("SpeedHorizontal", Mathf.Abs(rb.velocity.x));
+            animator.SetInteger("Orientation", (int)orientacao);
 
             //CORRER
             if (correndo == false)
