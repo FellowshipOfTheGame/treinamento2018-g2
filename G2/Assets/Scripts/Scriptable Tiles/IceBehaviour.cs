@@ -86,7 +86,7 @@ public class IceBehaviour : MonoBehaviour {
 					else
 						centerPoint = new Vector3(other.transform.position.x,(int)this.transform.position.y + Mathf.Sign(this.transform.position.y) * 0.5f,0);
 
-					other.transform.position = Vector3.MoveTowards(other.transform.position, centerPoint, offsetSpeed);
+					other.transform.position = Vector3.MoveTowards(other.transform.position, centerPoint, offsetSpeed * 1/(1 + Vector2.Distance(centerPoint, other.transform.position)));
 					currentSpeed = playerSpeed;
 				}
 			}

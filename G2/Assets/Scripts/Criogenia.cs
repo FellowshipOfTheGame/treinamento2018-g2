@@ -56,7 +56,7 @@ public static class Criogenia{
 
 		foreach(var pos in lastSafePosList[index-1])
 		{
-			if(WhichTileIsPlayerAt(pos, index) == TileType.Dry)
+			if(WhichTileIsPlayerAt(pos, index) != TileType.Water)
 			{
 				lastSafePos = pos;
 				return pos;
