@@ -3,12 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class FireCollider : MonoBehaviour {
-    private GameObject clone;
+    private GameObject clone, playerClone;
     public GameObject player1;
+
     private bool isDone=false;
     public Vector3 initPos;
 
-   
+    private void Start()
+    {
+        player1 = GameObject.Find("Player1");  
+    }
 
     private void Update()
     {
