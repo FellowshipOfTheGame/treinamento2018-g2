@@ -7,7 +7,7 @@ public class FireCollider : MonoBehaviour {
     public GameObject player1;
 
     private bool isDone=false;
-    public Vector3 initPos;
+    public GameObject initPos;
 
     private void Start()
     {
@@ -27,7 +27,7 @@ public class FireCollider : MonoBehaviour {
     {
         if (collision.CompareTag("Player"))
         {
-            player1.transform.position = initPos;
+            player1.transform.position = initPos.transform.position;
 
             if (clone != null)
             {

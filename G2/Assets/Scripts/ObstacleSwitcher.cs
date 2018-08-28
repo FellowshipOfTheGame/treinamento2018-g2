@@ -8,6 +8,7 @@ public class ObstacleSwitcher : Resp_Interacao {
     private bool isSwitched = false;
 
     public override void Acao() {
+        Debug.Log("Yo");
         if (!isSwitched) {
             foreach(GameObject onG in onObjects) {
                 onG.SetActive(false);

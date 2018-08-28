@@ -8,7 +8,7 @@ public class ActvatePlus : MonoBehaviour {
     
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player1") || other.CompareTag("Clone"))
+        if (other.CompareTag("Player") || other.CompareTag("Clone"))
         {
             isActive = true;
            
@@ -16,7 +16,7 @@ public class ActvatePlus : MonoBehaviour {
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player1") || collision.CompareTag("Clone"))
+        if (collision.CompareTag("Player") || collision.CompareTag("Clone"))
         {
             isActive = false;
 

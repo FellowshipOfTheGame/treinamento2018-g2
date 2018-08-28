@@ -18,7 +18,7 @@ public class cloner : MonoBehaviour {
         if (other.CompareTag("Player") && !pc.isCloned)
         {
             pc.isCloned = true;
-            Vector3Int pos = new Vector3Int((int)other.transform.position.x-3, (int)other.transform.position.y, (int)other.transform.position.z);
+            Vector2 pos = new Vector2((int)other.transform.position.x-3, other.transform.position.y - 0.5f);
             Instantiate(clone, pos, other.transform.rotation);
         }
     }

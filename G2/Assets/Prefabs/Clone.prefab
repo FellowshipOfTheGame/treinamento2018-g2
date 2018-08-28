@@ -102,6 +102,7 @@ MonoBehaviour:
   velocidade: -6
   isInControl: 1
   playerIndex: 0
+  animator: {fileID: 0}
   Correr: Correr_P1
   Horizontal: Horizontal_P1
   Vertical: Vertical_P1
@@ -139,7 +140,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 19
   m_Sprite: {fileID: 21300000, guid: 00d08376944c7424bbf1ce58904a602e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

@@ -7,6 +7,12 @@ TagManager:
   - Ima
   - Tile
   - Menu_pause
+  - Button
+  - Plus
+  - Cloner
+  - Minus
+  - Door
+  - Clone
   layers:
   - Default
   - TransparentFX
