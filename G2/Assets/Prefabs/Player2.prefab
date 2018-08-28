@@ -41,6 +41,7 @@ GameObject:
   - component: {fileID: 50233120901915788}
   - component: {fileID: 114482663156298442}
   - component: {fileID: 114030393994419496}
+  - component: {fileID: 95296507547314902}
   m_Layer: 2
   m_Name: Player2
   m_TagString: Player
@@ -55,8 +56,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1721306186473012}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.52, y: 6.49, z: 0}
-  m_LocalScale: {x: 0.7963494, y: 0.7963494, z: 0.7963494}
+  m_LocalPosition: {x: 4.843, y: -6.237, z: 0}
+  m_LocalScale: {x: 2.2, y: 2.2, z: 0.7963494}
   m_Children:
   - {fileID: 4920653776279552}
   m_Father: {fileID: 0}
@@ -151,15 +152,33 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.64, y: 0.64}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.2750934, y: 0.4245588}
   m_EdgeRadius: 0
+--- !u!95 &95296507547314902
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1721306186473012}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4e1618238f88b8e44965053108db7e8f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114030393994419496
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -186,7 +205,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidade: 5
   isInControl: 1
-  playerIndex: 2
+  playerIndex: 1
+  animator: {fileID: 95296507547314902}
   Correr: Correr_P2
   Horizontal: Horizontal_P2
   Vertical: Vertical_P2
@@ -231,9 +251,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
-  m_Sprite: {fileID: 21300000, guid: 6a2163e113b29684c9e1340a3e55c0cf, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_SortingOrder: 17
+  m_Sprite: {fileID: 21300000, guid: cc18e29affb0ce841827967069372b6e, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
