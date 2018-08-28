@@ -105,8 +105,8 @@ InputManager:
     m_Name: Horizontal_P2
     descriptiveName: 
     descriptiveNegativeName: 
-    negativeButton: left
-    positiveButton: right
+    negativeButton: 
+    positiveButton: 
     altNegativeButton: j
     altPositiveButton: l
     gravity: 3
@@ -121,8 +121,8 @@ InputManager:
     m_Name: Vertical_P2
     descriptiveName: 
     descriptiveNegativeName: 
-    negativeButton: left
-    positiveButton: right
+    negativeButton: 
+    positiveButton: 
     altNegativeButton: k
     altPositiveButton: i
     gravity: 3
