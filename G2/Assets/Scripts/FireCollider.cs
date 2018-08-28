@@ -9,17 +9,18 @@ public class FireCollider : MonoBehaviour {
     private bool isDone=false;
     public GameObject initPos;
 
-    private void Start()
-    {
-        player1 = GameObject.Find("Player1");  
-    }
 
     private void Update()
     {
-        if (player1.GetComponent<PlayerController>().isCloned && !isDone)
+        if(player1 != null)
         {
-            clone = GameObject.FindGameObjectWithTag("Clone");
-            isDone = true;
+
+            if (player1.GetComponent<PlayerController>().isCloned && !isDone)
+            {
+                clone = GameObject.FindGameObjectWithTag("Clone");
+                isDone = true;
+            }
+
         }
     }
     
