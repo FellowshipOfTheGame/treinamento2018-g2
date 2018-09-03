@@ -16,6 +16,16 @@ public static class Criogenia{
 	public static List<LeverBehaviour> leverLayout = new List<LeverBehaviour>();
 	public static GameObject criogenia = GameObject.Find("Criogenia");
 
+	public static void Initialize()
+	{
+		room1Temp = Temperature.Hot;
+		room2Temp = Temperature.Hot;
+		tileTypeIndex[0].Clear();
+		tileTypeIndex[1].Clear();
+		manager = GameObject.Find("Criogenia").GetComponent<CriogeniaManager>();
+		criogenia = GameObject.Find("Criogenia");
+	}
+
 	public static void SwapRoomTemp(int index)
 	{
 		if(index == 1)
@@ -69,7 +79,7 @@ public static class Criogenia{
 
 	public static int GetIndex(Vector2 pos)
 	{
-		if(pos.x <= criogenia.transform.position.x)
+		if(criogenia != null && pos.x <= criogenia.transform.position.x)
 			return 1;
 		else
 			return 2;

@@ -37,10 +37,13 @@ GameObject:
   m_Component:
   - component: {fileID: 4626830717402392}
   - component: {fileID: 212724883364248896}
-  - component: {fileID: 61487015224542622}
   - component: {fileID: 50233120901915788}
   - component: {fileID: 114482663156298442}
   - component: {fileID: 114030393994419496}
+  - component: {fileID: 95942816782824976}
+  - component: {fileID: 114402094935368578}
+  - component: {fileID: 61935362871645496}
+  - component: {fileID: 114616686274796764}
   m_Layer: 2
   m_Name: Player2
   m_TagString: Player
@@ -55,8 +58,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1721306186473012}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.52, y: 6.49, z: 0}
-  m_LocalScale: {x: 0.7963494, y: 0.7963494, z: 0.7963494}
+  m_LocalPosition: {x: 6.82, y: -7.9, z: 0}
+  m_LocalScale: {x: 2.203488, y: 2.203488, z: 2.203488}
   m_Children:
   - {fileID: 4920653776279552}
   m_Father: {fileID: 0}
@@ -83,8 +86,8 @@ Camera:
   m_GameObject: {fileID: 1502943939256376}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.1792453, g: 0.16994482, b: 0.16994482, a: 1}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
@@ -135,7 +138,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &61487015224542622
+--- !u!61 &61935362871645496
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -150,16 +153,34 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    pivot: {x: 0.5, y: 0.3}
+    oldSize: {x: 0.64, y: 0.64}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_Size: {x: 0.2, y: 0.2}
+  m_EdgeRadius: 0.1
+--- !u!95 &95942816782824976
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1721306186473012}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4e1618238f88b8e44965053108db7e8f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114030393994419496
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -173,6 +194,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distancia: 2
   Interacao: Interacao_P2
+--- !u!114 &114402094935368578
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1721306186473012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bddff32479807948a51a9e1f918c881, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCloned: 0
 --- !u!114 &114482663156298442
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -187,9 +220,22 @@ MonoBehaviour:
   velocidade: 5
   isInControl: 1
   playerIndex: 2
+  animator: {fileID: 95942816782824976}
   Correr: Correr_P2
   Horizontal: Horizontal_P2
   Vertical: Vertical_P2
+--- !u!114 &114616686274796764
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1721306186473012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bddff32479807948a51a9e1f918c881, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCloned: 0
 --- !u!124 &124849032287456920
 Behaviour:
   m_ObjectHideFlags: 1
@@ -231,9 +277,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
-  m_Sprite: {fileID: 21300000, guid: 6a2163e113b29684c9e1340a3e55c0cf, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_SortingOrder: 50
+  m_Sprite: {fileID: 21300000, guid: cc18e29affb0ce841827967069372b6e, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

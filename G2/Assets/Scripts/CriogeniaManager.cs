@@ -6,8 +6,32 @@ using UnityEngine.Events;
 
 public class CriogeniaManager : MonoBehaviour {
 	
-		[SerializeField]private GameObject Ice1, Ice2, Water1, Water2, BreakableIce1, BreakableIce2;
+	[SerializeField] private GameObject Ice1, Ice2, Water1, Water2, BreakableIce1, BreakableIce2;
+	bool isActive = true;
 	
+	private void Awake() {
+
+		(Ice1 = GameObject.Find("Ice1")).SetActive(false);
+		(Ice2 = GameObject.Find("Ice2")).SetActive(false);
+		BreakableIce1 = GameObject.Find("BreakableIce1");
+		BreakableIce2 = GameObject.Find("BreakableIce2");
+		(Water1 = GameObject.Find("Water1")).SetActive(false);
+		(Water2 = GameObject.Find("Water2")).SetActive(false);
+
+		Criogenia.Initialize();
+	}
+
+	private void Start() {
+		
+		SwapTemperature(1, Criogenia.Temperature.Hot);
+		SwapTemperature(2, Criogenia.Temperature.Hot);
+
+		GameManager.instance.ElevatorDoor = GameObject.Find("ElevatorDoor");
+		GameManager.instance.NextStageScreen = GameObject.Find("UI").transform.Find("NextStageScreen").gameObject;
+		GameManager.instance.timer = GameObject.Find("Timer").GetComponent<Timer>();
+
+		GameManager.instance.InitGame();
+	}
 
 	void Update()
 	{
@@ -15,6 +39,7 @@ public class CriogeniaManager : MonoBehaviour {
 			Criogenia.SwapRoomTemp(1);
 		if(Input.GetKeyDown(KeyCode.B))
 			Criogenia.SwapRoomTemp(2);
+
 	}
 
 	public void SwapTemperature(int index, Criogenia.Temperature temperature)
@@ -30,41 +55,57 @@ public class CriogeniaManager : MonoBehaviour {
 		{
 			if(index == 1)
 			{
-				Ice1.SetActive(false);
-				Water1.SetActive(true);
-				foreach (var tile in BreakableIce1.GetComponentsInChildren<BreakableIceBehaviour>())
-					tile.Break();
+				if(Ice1 != null)
+					Ice1.SetActive(false);
+				if(Water1 != null)
+					Water1.SetActive(true);
+				if(BreakableIce1 != null)
+					foreach (var tile in BreakableIce1.GetComponentsInChildren<BreakableIceBehaviour>())
+						tile.Break();
 
 			}
 			else if(index == 2)
 			{
-				Ice2.SetActive(false);
-				Water2.SetActive(true);
-				foreach (var tile in BreakableIce2.GetComponentsInChildren<BreakableIceBehaviour>())
-					tile.Break();
+				if(Ice2 != null)
+					Ice2.SetActive(false);
+				if(Water2 != null)
+					Water2.SetActive(true);
+				if(BreakableIce2 != null)
+					foreach (var tile in BreakableIce2.GetComponentsInChildren<BreakableIceBehaviour>())
+						tile.Break();
 			}
 		}
 		else if(temperature == Criogenia.Temperature.Hot)
 		{
 			if(index == 1)
 			{
-				Ice1.SetActive(true);
-				Water1.SetActive(false);
-				foreach (var tile in BreakableIce1.GetComponentsInChildren<BreakableIceBehaviour>())
-					tile.Regen();
+				if(Ice1 != null)
+					Ice1.SetActive(true);
+				if(Water1 != null)
+					Water1.SetActive(false);
+				if(BreakableIce1 != null)
+					foreach (var tile in BreakableIce1.GetComponentsInChildren<BreakableIceBehaviour>())
+						tile.Regen();
 			}
 			else if(index == 2)
 			{
-				Ice2.SetActive(true);
-				Water2.SetActive(false);
-				foreach (var tile in BreakableIce2.GetComponentsInChildren<BreakableIceBehaviour>())
-					tile.Regen();
+				if(Ice2 != null)
+					Ice2.SetActive(true);
+				if(Water2 != null)
+					Water2.SetActive(false);
+				if(BreakableIce2 != null)
+					foreach (var tile in BreakableIce2.GetComponentsInChildren<BreakableIceBehaviour>())
+						tile.Regen();
 			}
 		}
 	}
 
 	public void EndGame()
 	{
-		Debug.Log("YouWin");
+		if(isActive)
+		{
+			isActive = false;
+			GameManager.instance.CompletedPuzzles++;
+		}
 	}
 }
