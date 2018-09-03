@@ -12,8 +12,7 @@ public class Interagir : MonoBehaviour
     private Movimento_Player.Orientacao orientacao;
     private Resp_Interacao resp_int;
 
-    [SerializeField]
-    private string Interacao;
+    public string Interacao;
 
     // Use this for initialization
     void Start()

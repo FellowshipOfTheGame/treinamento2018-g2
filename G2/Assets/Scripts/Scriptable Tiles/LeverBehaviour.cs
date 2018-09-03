@@ -39,6 +39,13 @@ public class LeverBehaviour : Resp_Interacao {
 					Criogenia.SwapRoomTemp(2);
 				else if(index == 2)
 					Criogenia.SwapRoomTemp(1);
+				
+				foreach(var player in FindObjectsOfType<Movimento_Player>())
+				{
+					Debug.Log(player.gameObject.name + "Found");
+					if(player.playerIndex != index)
+						player.isInControl = true;
+				}
 			}
 	}
 	

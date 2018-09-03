@@ -20,8 +20,7 @@ public class Movimento_Player : MonoBehaviour
     public int playerIndex;
     public Animator animator;
 
-    [SerializeField]
-    private string Correr, Horizontal, Vertical;
+    public string Correr, Horizontal, Vertical;
 
     // Use this for initialization
     void Start()
@@ -44,7 +43,10 @@ public class Movimento_Player : MonoBehaviour
                 Criogenia.lastSafePosList[playerIndex-1].Push(this.gameObject.transform.position);
             }
             //MOVIMENTO
-            rb.velocity = new Vector2(Input.GetAxis(Horizontal) * velocidade, Input.GetAxis(Vertical) * velocidade); //define a componente velocity a partir de um vetor
+            rb.velocity = new Vector2(Input.GetAxis(Horizontal) * velocidade, Input.GetAxisRaw(Vertical) * velocidade); //define a componente velocity a partir de um vetor
+           
+            //if(rb.velocity.magnitude > velocidade)
+            //    rb.velocity = rb.velocity.normalized * velocidade;
 
             if (rb.velocity.magnitude != 0f)                                               //analisa o angulo em que o personagem
             {                                                                              //se move, indo de 0 a 359 graus
@@ -74,7 +76,7 @@ public class Movimento_Player : MonoBehaviour
 
                 if (Input.GetButtonDown(Correr) && rb.velocity.magnitude != 0f)
                 {
-                    velocidade *= 2;
+                    velocidade *= 1.5f;
                     correndo = true;
                 }
 
@@ -84,7 +86,7 @@ public class Movimento_Player : MonoBehaviour
 
                 if (Input.GetButtonUp(Correr) || rb.velocity.magnitude == 0f)
                 {
-                    velocidade /= 2;
+                    velocidade /= 1.5f;
                     correndo = false;
                 }
             }
