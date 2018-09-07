@@ -6,12 +6,20 @@ using UnityEngine.UI;
 public class Timer : MonoBehaviour {
 
 	Text time;
+	public GameObject panel;
 	public int currentTime {get; set;}
 	private void Awake()
 	{
 		time = GetComponent<Text>();
 	}
 
+	private void OnEnable() {
+		panel.SetActive(true);
+	}
+
+	private void OnDisable() {
+		panel.SetActive(false);
+	}
 	public void StartTimer(int timeLimit)
 	{
 		Debug.Log("Start");
@@ -22,6 +30,7 @@ public class Timer : MonoBehaviour {
 	private void UpdateTimer()
 	{
 		currentTime--;
+		GameManager.instance.levelTime++;
 
 		if(currentTime <= 0)
 		{

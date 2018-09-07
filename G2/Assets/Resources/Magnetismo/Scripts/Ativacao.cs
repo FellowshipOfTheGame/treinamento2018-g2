@@ -11,14 +11,21 @@ public class Ativacao : MonoBehaviour {
     static bool isActive = true;
     static int platAtivadas = 0;
 
+    private void Start() {
+        platAtivadas = 0;
+        isActive = true;
+    }
+
     void OnTriggerEnter2D(Collider2D col)
     {
         if(col.gameObject.name == "Bola" && isActive)
         {
             platAtivadas++;
-            if(platAtivadas == 2)
+            Debug.Log(platAtivadas);
+            if(platAtivadas >= 2)
             {
                 GameManager.instance.CompletedPuzzles++;
+                GameManager.instance.MagIcon.SetActive(true);
                 isActive = false;
             }
         }
@@ -29,6 +36,7 @@ public class Ativacao : MonoBehaviour {
     {
         if (col.gameObject.name == "Bola")
             platAtivadas--;
+            Debug.Log(platAtivadas);
             //ativado = false;
     }
 
