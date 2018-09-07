@@ -47,8 +47,7 @@ public class LarOnOff : Resp_Interacao {
 
     void Update()
     {
-
-        if (Input.GetKeyDown(KeyCode.L))
+        if (Input.GetKeyDown(KeyCode.M))
             Acao();
     }
 }

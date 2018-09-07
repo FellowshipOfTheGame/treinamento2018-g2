@@ -25,6 +25,7 @@ public class OpenDoor1 : MonoBehaviour {
             Destroy(clone);
             CameraManager.isBiomolDone = true;
             GameManager.instance.CompletedPuzzles++;
+            GameManager.instance.BioIcon.SetActive(true);
         }
 	}
 }

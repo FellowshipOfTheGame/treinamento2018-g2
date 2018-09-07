@@ -27,9 +27,6 @@ public class CriogeniaManager : MonoBehaviour {
 		SwapTemperature(2, Criogenia.Temperature.Hot);
 
 		GameManager.instance.ElevatorDoor = GameObject.Find("ElevatorDoor");
-		GameManager.instance.NextStageScreen = GameObject.Find("UI").transform.Find("NextStageScreen").gameObject;
-		GameManager.instance.timer = GameObject.Find("Timer").GetComponent<Timer>();
-
 		GameManager.instance.InitGame();
 	}
 
@@ -106,6 +103,7 @@ public class CriogeniaManager : MonoBehaviour {
 		{
 			isActive = false;
 			GameManager.instance.CompletedPuzzles++;
+			GameManager.instance.CrioIcon.SetActive(true);
 		}
 	}
 }
