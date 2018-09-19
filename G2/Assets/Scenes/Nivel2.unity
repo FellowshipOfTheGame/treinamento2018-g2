@@ -840,7 +840,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &50798630
 GameObject:
@@ -5626,6 +5626,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1646368209286064, guid: 525f0c9ebfb91124c9f73fe1ab239afa, type: 2}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224892000975749544, guid: 525f0c9ebfb91124c9f73fe1ab239afa,
+        type: 2}
+      propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -16602,7 +16607,7 @@ Transform:
   - {fileID: 1015903517}
   - {fileID: 1196122249}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &729301866
 GameObject:
@@ -18460,6 +18465,7 @@ GameObject:
   - component: {fileID: 938690579}
   - component: {fileID: 938690578}
   - component: {fileID: 938690577}
+  - component: {fileID: 938690580}
   m_Layer: 0
   m_Name: Bola
   m_TagString: Untagged
@@ -18565,6 +18571,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &938690580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 938690575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e047a0f224bb48d4a8eb1a4a3c99df96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &945233356
 GameObject:
   m_ObjectHideFlags: 0
@@ -18710,7 +18727,7 @@ Transform:
   - {fileID: 1091689544}
   - {fileID: 1095913363}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &965315305
 GameObject:
@@ -19456,7 +19473,7 @@ Transform:
   - {fileID: 1368866563}
   - {fileID: 138427276}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1052100719
 Prefab:
@@ -23703,7 +23720,7 @@ Transform:
   - {fileID: 52548479}
   - {fileID: 697186911}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1250591634
 GameObject:
@@ -58552,7 +58569,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1469474768
 GameObject:
@@ -61884,6 +61901,7 @@ GameObject:
   - component: {fileID: 1748603720}
   - component: {fileID: 1748603719}
   - component: {fileID: 1748603718}
+  - component: {fileID: 1748603721}
   m_Layer: 0
   m_Name: Bola
   m_TagString: Untagged
@@ -61989,6 +62007,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1748603721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1748603716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e047a0f224bb48d4a8eb1a4a3c99df96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1764572941
 GameObject:
   m_ObjectHideFlags: 0

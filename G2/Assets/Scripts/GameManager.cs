@@ -9,7 +9,8 @@ public class GameManager : MonoBehaviour {
 	public static GameManager instance = null;
 	private static int level = 0;
 	public float totalTime, levelTime = 0f;
-	public int totalGameOvers = 0, levelGameOvers = 0;
+	public int totalGameOvers = 0;
+	static public int levelGameOvers = 0;
 	public AudioClip DefaultSong, VictorySong;
 	public AudioSource MusicPlayer;
 	public GameObject MagIcon, CrioIcon, BioIcon;
@@ -27,7 +28,7 @@ public class GameManager : MonoBehaviour {
 	public GameObject ElevatorDoor, DefeatScreen, NextStageScreen, VictoryScreen;
 	public enum EndCondition {Victory, Defeat};	
 	public Timer timer;
-	private int[] testTimeLimits = new int[3] {300, 420, 600};
+	private int[] testTimeLimits = new int[3] {600, 420, 600};
 
 	private void Awake()
 	{
@@ -110,6 +111,7 @@ public class GameManager : MonoBehaviour {
 	public void Retry()
 	{
 		timer.StopTimer();
+		levelGameOvers++;
 		EndGame(level);
 	}
 
@@ -147,7 +149,6 @@ public class GameManager : MonoBehaviour {
 		else if(endCondition == EndCondition.Defeat)
 		{
 			DefeatScreen.SetActive(true);
-			levelGameOvers++;
 		}
 	}
 
